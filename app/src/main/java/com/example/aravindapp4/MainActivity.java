@@ -25,20 +25,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
               
-                singlePermissionMethod();
+                singlePermissionMethod1();
             }
         });
         findViewById(R.id.multiple).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 
-                multiplePermissionMethod();
+                multiplePermissionMethod1();
 
             }
         });
     }
 
-    private void multiplePermissionMethod() {
+    private void multiplePermissionMethod1() {
 
         if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS)+
                 ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CALL_LOG)+
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void singlePermissionMethod() {
+    private void singlePermissionMethod1() {
 
         if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED)
         {
