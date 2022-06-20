@@ -3,8 +3,10 @@ package com.example.aravindapp4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.karumi.dexter.Dexter;
@@ -21,10 +23,23 @@ import java.util.List;
 public class MainActivity2 extends AppCompatActivity {
 
 
+    TextView textView;
+
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+    String getNameStr;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        textView=findViewById(R.id.txt);
+
+        sharedPreferences=getSharedPreferences("MODE",MODE_PRIVATE);
+        editor=sharedPreferences.edit();
+
+        getNameStr=sharedPreferences.getString("username","");
+        textView.setText(""+getNameStr);
 
         findViewById(R.id.single).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AravindApp42/app/src/main/res/layout/activity_home.xml" value="0.1675929884566054" />
         <entry key="..\:/AravindApp42/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/AravindApp42/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/AravindApp42/app/src/main/res/layout/activity_shared_prefrences.xml" value="0.18" />
+        <entry key="..\:/AravindApp42/app/src/main/res/layout/activity_test_login.xml" value="0.2" />
+        <entry key="..\:/AravindApp42/app/src/main/res/layout/activity_test_spinner.xml" value="0.21" />
       </map>
     </option>
   </component>

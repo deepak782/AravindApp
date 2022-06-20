@@ -22,5 +22,13 @@
         android:text="Multiple"
         android:id="@+id/multiple"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:hint="Saved value"
+        android:id="@+id/txt"/>
+
 
 </LinearLayout>
